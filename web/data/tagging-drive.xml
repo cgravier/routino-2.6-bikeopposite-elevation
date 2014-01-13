@@ -945,6 +945,18 @@
 
     </if> <!-- k="highway" -->
 
+    <!-- Special case for motor vehicles -->
+
+    <if>
+      <output k="foot"       v="no"/>
+      <output k="horse"      v="no"/>
+      <output k="wheelchair" v="no"/>
+      <output k="bicycle"    v="no"/>
+
+      <output k="bridge" v="no"/>
+      <output k="tunnel" v="no"/>
+    </if>
+
   </way>
 
   <!-- - - - - - - - - - - Relation rules - - - - - - - - - - -->
@@ -1001,6 +1013,13 @@
         <output/>
       </if>
 
+    </if>
+
+    <!-- Special case for motor vehicles -->
+
+    <if>
+      <output k="footroute"    v="no"/>
+      <output k="bicycleroute" v="no"/>
     </if>
 
   </relation>

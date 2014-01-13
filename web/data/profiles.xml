@@ -155,7 +155,7 @@
       <property type="footroute"    percent="55" />
       <property type="bicycleroute" percent="55" />
       <property type="doublesens"   percent="50" />
-    </properties>
+   </properties>
     <restrictions>
       <oneway obey="0" /> 
       <turns  obey="0" /> 

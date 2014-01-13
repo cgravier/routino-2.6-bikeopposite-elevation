@@ -38,8 +38,8 @@ print PROFILE "#################################################################
 print PROFILE "########################### Routino default profile ############################\n";
 print PROFILE "################################################################################\n";
 print PROFILE "\n";
-
-open(EXECUTE,"$bin_dir/$router_exe $params --help-profile-perl |") || die "Failed to execute router to generate profiles.\n";
+print ($bin_dir.'/'.$router_exe.' '.$params.' --help-profile-perl');
+open(EXECUTE,"$bin_dir/$router_exe $params --help-profile-perl |") || die "Failed to execute router to generate profiles 1.\n";
 
 while(<EXECUTE>)
   {
@@ -63,7 +63,7 @@ print PROFILE "/////////////////////////// Routino default profile /////////////
 print PROFILE "////////////////////////////////////////////////////////////////////////////////\n";
 print PROFILE "\n";
 
-open(EXECUTE,"$bin_dir/$router_exe $params --help-profile-json |") || die "Failed to execute router to generate profiles.\n";
+open(EXECUTE,"$bin_dir/$router_exe $params --help-profile-json |") || die "Failed to execute router to generate profiles 2.\n";
 
 while(<EXECUTE>)
   {

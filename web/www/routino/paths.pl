@@ -22,10 +22,10 @@
 # Directory path parameters
 
 # EDIT THIS to set the root directory for the non-web data files.
-$root_dir="../..";
+$root_dir="../../";
 
 # EDIT THIS to change the location of the individual directories.
-$bin_dir="$root_dir/bin";
+$bin_dir="$root_dir/../src"; # this sucks but this is how this routino is shipped
 $data_dir="$root_dir/data";
 $results_dir="$root_dir/results";
 
