@@ -11,11 +11,17 @@ var mapprops={ // contains all properties for the map to be displayed.
 
  // EDIT THIS below to change the visible map limits
 
-    westedge:  -11.0,          // Minimum longitude (degrees)
-    eastedge:    2.0,          // Maximum longitude (degrees)
+	// St-Etienne:
+	// xmin : 4.183
+	// ymin : 45.305
+	// xmax : 4.582
+	// ymax : 45.525
 
-    southedge:  49.5,          // Minimum latitude (degrees)
-    northedge:  61.0,          // Maximum latitude (degrees)
+    westedge:  4.183,          // Minimum longitude (degrees)
+    eastedge:    4.582,          // Maximum longitude (degrees)
+
+    southedge:  45.305,          // Minimum latitude (degrees)
+    northedge:  45.525,          // Maximum latitude (degrees)
 
     zoomout:       4,          // Minimum zoom
     zoomin:       15,          // Maximum zoom

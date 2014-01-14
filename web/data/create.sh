@@ -16,7 +16,7 @@ server="download.geofabrik.de/openstreetmap"
 # Download the files
 
 for file in $files; do
-   wget -N http://$server/$file
+   wget -N --timeout=3600 http://$server/$file
 done
 
 
