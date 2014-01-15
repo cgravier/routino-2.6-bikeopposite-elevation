@@ -104,10 +104,11 @@ void srtmReadPx(int y, int x, int* height){
 
     if(hgt == -32768) {
         printf("ERROR: Void pixel found on xy(%d,%d) in latlon(%d,%d) tile.\n", x,y, srtmLat, srtmLon);
-        exit(1);
-    }
-
-    *height = (int) hgt;
+        //exit(1);
+	*height = 0;
+    } else {
+    	*height = (int) hgt;
+   }
 }       
 
 
